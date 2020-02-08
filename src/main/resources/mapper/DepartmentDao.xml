@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.dao.DepartmentDao">
+    <select id="findByName" resultType="com.example.entity.DepartmentEntity">
+        SELECT * FROM tb_dept WHERE `name`=#{name}
+    </select>
+</mapper>
